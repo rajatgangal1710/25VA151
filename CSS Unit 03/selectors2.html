@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+       /* body{
+        color:aqua;
+       } */
+
+       /* .box{
+        color:brown;
+       } */
+
+       /* div p{
+         color:blueviolet;
+       } */
+
+       /* .box > p{
+        background-color:crimson;
+       } */
+
+       /* div ~ p{
+        color:rgb(240, 255, 240);
+       } */
+          a:hover{
+            color:blue;
+          }
+          /* a:visited{
+            color:aquamarine;
+          } */
+           a:link{
+            text-decoration: none; font-size : larger;
+           }
+
+           ul {
+             list-style:none; display: flex;
+           }
+           ul li {
+            margin: 20px; border-right: 1px solid black; padding-right:20px; 
+           }
+           ul li:hover{
+            color:blue;
+           }
+           ul li:nth-child(5){
+            border-right:0px;
+           }
+
+           .para{
+            color:blueviolet;
+           }
+           .para::first-letter{
+            color:brown; font-size: larger;
+           }
+           .para::first-line{
+            background-color:darkcyan;
+           }
+           .para::before{
+            content: "Read More";
+            color:darkgreen;
+            font-size: 20px;
+           }
+
+    </style>
+</head>
+<body>
+    <!--CSS Combinators-->
+
+    <div class="box">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla enim omnis doloribus debitis ut obcaecati, sequi possimus rem distinctio optio deleniti. Consequatur atque quo, perspiciatis eius molestiae ipsa distinctio aliquam!</p>
+
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, atque, delectus expedita recusandae, minima velit ducimus qui quo esse quae consectetur doloremque similique! Nobis dolor reprehenderit consequuntur, sed doloribus et!</p>
+        </div>
+
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga laboriosam perferendis alias, quisquam magnam eveniet at id nam reprehenderit exercitationem maiores, ut sed! Sed pariatur dignissimos, exercitationem rerum consectetur est.</p>
+
+    <!--CSS Pseudo-class: style of a special state of an element-->
+
+    <a href="">Visit the link</a>
+    <ul type="none">
+        <li>home</li>
+        <li>services</li>
+        <li>about</li>
+        <li>gallery</li>
+        <li>contact</li>
+    </ul>
+    <!--CSSPseudo-Elements: style a specific part of an element-->
+
+    <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem labore unde, repellendus asperiores rem expedita dolore distinctio ipsa dolores vero eius sed voluptatum! Porro veritatis officia itaque magni, velit doloribus.</p>
+</body>
+</html>
